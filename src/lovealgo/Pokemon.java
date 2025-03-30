@@ -4,10 +4,12 @@ package lovealgo;
 public class Pokemon {
     private String name;
     private int level;
+    private int hp;
 
     public Pokemon(String name, int level) {
         this.name = name;
         this.level = level;
+        this.hp = level * 10; // 레벨에 따라 HP 설정
     }
 
     public void attack() {
@@ -26,5 +28,13 @@ public class Pokemon {
 
     public int getLevel() {
         return level;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+    // Setter 메소드
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 } // <-- 이 괄호를 반드시 확인해주세요

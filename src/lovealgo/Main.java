@@ -34,5 +34,12 @@ public class Main {
         // 삭제 후 전체 조회
         pokedex.showAllPokemon();
 
+        // 포켓몬 생성
+        Pokemon pikachu = PokemonFactory.createPokemon("전기");
+        Pokemon charmander = PokemonFactory.createPokemon("불꽃");
+
+        // 배틀 시작!
+        BattleSimulator.battle(pikachu, charmander);
+
     }
 }
