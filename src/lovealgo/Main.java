@@ -16,5 +16,23 @@ public class Main {
         p1.attack();
         p2.attack();
         p3.attack();
+
+        // 포켓몬 도감 초기화
+        Pokedex pokedex = new Pokedex();
+
+        // 포켓몬 등록 (CREATE)
+        pokedex.registerPokemon("피카츄", 5);
+        pokedex.registerPokemon("꼬부기", 4);
+        pokedex.registerPokemon("파이리", 6);
+
+        // 포켓몬 전체 조회 (READ)
+        pokedex.showAllPokemon();
+
+        // 특정 포켓몬 삭제 (DELETE)
+        pokedex.removePokemon("꼬부기");
+
+        // 삭제 후 전체 조회
+        pokedex.showAllPokemon();
+
     }
 }
